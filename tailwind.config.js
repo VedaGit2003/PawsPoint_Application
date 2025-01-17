@@ -9,6 +9,9 @@ module.exports = {
       extend: {
         fontFamily:{
           'buggie':["Bungee Tint", 'sans-serif']
+        },
+        width:{
+          1.5:'15%'
         }
       },
       

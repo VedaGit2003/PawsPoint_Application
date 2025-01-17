@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, ScrollView, Image, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, ScrollView, Image, StyleSheet, TextInput, TouchableOpacity, StatusBar } from 'react-native';
 import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
 import { Backend_URL } from '../utils/Urls';

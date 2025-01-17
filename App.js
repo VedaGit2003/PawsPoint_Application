@@ -17,6 +17,8 @@ import SignUpScreen from './src/screens/SignUpScreen';
 import LoginScreen from './src/screens/LoginScreen';
 import UserProfile from './src/screens/Auth/UserProfile';
 import { useEffect, useState } from 'react';
+import BuyAdaptPet from './src/screens/BuyAdaptPet';
+import VetsList from './src/screens/VetsList';
 
 export default function App() {
   const Stack = createNativeStackNavigator()
@@ -56,6 +58,8 @@ token ? */}
         <Stack.Screen name='userProfile' component={UserProfile} options={{headerShown:false}} />
         <Stack.Screen name='signUp' component={SignUpScreen} options={{headerShown:false}} />
         <Stack.Screen name='logIn' component={LoginScreen} options={{headerShown:false}} />
+        <Stack.Screen name='buy-adapt' component={BuyAdaptPet} options={{headerShown:false}} />
+        <Stack.Screen name='vet-list' component={VetsList} options={{headerShown:false}} />
 </Stack.Navigator>
 {/* :   
       <Stack.Navigator initialRouteName='signUp'>
@@ -87,6 +91,7 @@ const TabNavigator = () => {
       <Tab.Screen name='Food' component={FoodScreen}
         options={{
           title: 'Food',
+          headerShown:false,
           tabBarIcon: ({ focused }) => (
             <Svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 72 72">
               <Circle cx="36" cy="37" r="23" fill="#3f3f3f" />
@@ -196,6 +201,7 @@ const TabNavigator = () => {
       <Tab.Screen name='Flash' component={FlashDoorScreen}
         options={{
           title: 'Flash',
+          headerShown:false,
           tabBarIcon: ({ focused }) => (
             <Svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20">
               <Path
